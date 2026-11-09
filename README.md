@@ -36,7 +36,7 @@ docker compose up --build -d
 pip install -r requirements.txt
 python main.py
 ```
-### 🧪 Автоматизированное тестирование (Test Suite)
+## 🧪 Автоматизированное тестирование (Test Suite)
 
 Комплексный скрипт test_plan.py выполняет 16 сквозных проверок (TC-01 – TC-16), включая тестирование транзакций БД, защиту от коллизий, проверку хэширования SHA-256 и рендеринг шаблонов Jinja2:
 python test_plan.py
