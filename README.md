@@ -26,7 +26,7 @@
 ### Вариант 1: В контейнере Docker (Рекомендуется)
 ```bash
 docker compose up --build -d
-
+```
 
 
 
