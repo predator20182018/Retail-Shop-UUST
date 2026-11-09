@@ -31,7 +31,7 @@ docker compose up --build -d
 
 
 
-Вариант 2: Локальный запуск
+### Вариант 2: Локальный запуск
 pip install -r requirements.txt
 python main.py
 🧪 Автоматизированное тестирование (Test Suite)
