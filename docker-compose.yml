@@ -1,0 +1,9 @@
+﻿services:
+  retail-shop-api:
+    build: .
+    container_name: retail_shop_uust
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./retail_shop.db:/app/retail_shop.db
+    restart: unless-stopped

@@ -1,4 +1,6 @@
+from sqlmodel import SQLModel, Field
 from pydantic import BaseModel, EmailStr
+from typing import Optional
 
 
 class OrderCreate(BaseModel):
@@ -20,9 +22,9 @@ class OrderCreate(BaseModel):
         }
 
 
-class Order(BaseModel):
-    id: int
-    customer_email: EmailStr
+class Order(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    customer_email: str
     product_id: int
     product_title: str
     price_at_purchase: float
